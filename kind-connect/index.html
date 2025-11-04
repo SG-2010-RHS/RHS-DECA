@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kind-Connect | Transparent Giving & Promotion</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6; /* Light, clean background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky; /* Makes the header stay at the top */
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007BFF; /* Primary blue for trust */
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        .cta-button {
+            background-color: #28a745; /* Green for action */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 100px 5% 80px;
+        }
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        .cta-primary {
+            background-color: #ffc107; /* Bright yellow for visibility */
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Make button look like a link */
+            display: inline-block;
+        }
+        
+        /* General Content Sections */
+        .content-section {
+            padding: 60px 5%;
+        }
+        .content-section h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        .content-section .subtitle {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Feature Cards (Used for Marketplace explanation) */
+        .feature-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 25px;
+            flex-basis: 30%;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #28a745;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+        
+        /* Partner Callout */
+        .partner-callout {
+            background-color: #e9ecef;
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .partner-callout h2 {
+            color: #333;
+        }
+        .logo-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .partner-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .benefit-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex-basis: 40%;
+            text-align: left;
+        }
+        .benefit-card h3 {
+            color: #007BFF;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background-color: #f4f7f6;
+            text-align: center;
+        }
+        .team-info {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #adb5bd;
+            text-align: center;
+            padding: 25px 5%;
+            font-size: 0.9em;
+        }
+        .footer-links a {
+            color: #adb5bd;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Kind-Connect</div>
+        <nav>
+            <a href="#marketplace">Marketplace</a>
+            <a href="#partners">Partners</a>
+            <a href="#about">About Us</a>
+        </nav>
+        <button class="cta-button" onclick="alert('Redirecting to Partner Signup...')">Become a Partner</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Connecting Good Intentions with Great Impact.</h1>
+            <p style="font-size: 1.2em; margin-bottom: 25px; opacity: 0.9;">See exactly where your donation goes. Fund a specific charity need, not just a budget.</p>
+            <a class="cta-primary" href="#marketplace">Explore Our Transparency Model</a>
+        </section>
+
+        <section id="marketplace" class="content-section">
+            <h2>The Itemized Needs Marketplace: How It Works</h2>
+            <p class="subtitle">Since we are just launching, we are focused on recruiting our first cohort of non-profit partners. This marketplace will soon host tangible needs, ensuring every dollar is accountable.</p>
+            
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>1. Itemized Needs</h3>
+                    <p>Charities post specific items like **"Three new laptops for student tutors"** or **"$200 for event permit fees."** This eliminates ambiguity for donors.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Impact Passport</h3>
+                    <p>Donors receive a digital tracker and **photo proof** when the funded item is purchased and delivered. **Trust** is built through radical, real-time accountability.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Talent Match</h3>
+                    <p>Charities also post needs for **pro-bono student skills** (e.g., social media strategy, flyer design), linking them to our pool of skilled youth volunteers.</p>
+                </div>
+            </div>
+            
+            <p class="subtitle" style="margin-top: 50px;">
+                Are you a local non-profit interested in joining our zero-fee capacity-building network? 
+            </p>
+            <div style="text-align: center;">
+                <button class="cta-primary" onclick="alert('Redirecting to Charity Application...')">Register Your Charity Today</button>
+            </div>
+        </section>
+        
+        <section id="partners" class="partner-callout">
+            <h2>Partner with Us: Fueling Promotional Reinvestment</h2>
+            <p class="subtitle">Our **Promotional Reinvestment Model** is powered by our corporate partners. Your partnership fee is immediately committed to aggressive marketing campaigns for local charities.</p>
+            
+            <div class="partner-benefits">
+                 <div class="benefit-card">
+                    <h3>High-Impact CSR Visibility</h3>
+                    <p>Align your brand with **radical transparency** and **youth innovation**. Your name is featured prominently in all our promotional campaigns, demonstrating clear community support.</p>
+                </div>
+                 <div class="benefit-card">
+                    <h3>Measurable Promotional ROI</h3>
+                    <p>We provide a direct, high-efficiency way to fund charity promotion. Because our team operates at low cost, **76.0%** of your investment is guaranteed to boost charity visibility.</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 40px; font-weight: bold; font-size: 1.1em;">Be one of the first businesses to champion this student-led, community-first financial model.</p>
+            <button class="cta-button" style="margin-top: 15px; background-color: #007BFF; font-size: 1.1em;">View Partnership Proposal</button>
+        </section>
+
+        <section id="about" class="content-section about-us">
+            <h2>About The Community Giving Project</h2>
+            <p class="subtitle">We are a team from **Redmond High School** focused on turning academic skills into actionable support.</p>
+            <div class="team-info">
+                <p><strong>Our Problem:</strong> Charitable organizations often lack the creative marketing and event planning knowledge needed to reach new supporters.</p>
+                <p><strong>Our Solution:</strong> We created Kind-Connect to provide a sustainable, student-led pipeline of talent and promotion, bridging the gap between community need and youth-driven innovation.</p>
+                <p><strong>Our Team:</strong> Sushaan Joshi, Swastik Gupta, Tathagat Dave</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#marketplace">Marketplace</a> |
+            <a href="#partners">Partners</a> |
+            <a href="#about">About Us</a> |
+            <a href="#" onclick="alert('Contact details will be here')">Contact</a>
+        </div>
+        <p>&copy; 2025 Kind-Connect | A Community Giving Project</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log('Kind-Connect Landing Page Loaded Successfully.');
+        });
+    </script>
+</body>
+</html>
