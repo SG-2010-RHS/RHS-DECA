@@ -16,6 +16,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky; /* Makes the header stay at the top */
+    top: 0;
+    z-index: 1000;
 }
 .logo {
     font-size: 1.5em;
@@ -27,6 +30,10 @@ nav a {
     text-decoration: none;
     color: #555;
     font-weight: 500;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #007BFF;
 }
 .cta-button {
     background-color: #28a745; /* Green for action */
@@ -43,16 +50,11 @@ nav a {
     background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 80px 5% 60px;
+    padding: 100px 5% 80px;
 }
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-bottom: 10px;
-}
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
-    opacity: 0.9;
 }
 .cta-primary {
     background-color: #ffc107; /* Bright yellow for visibility */
@@ -64,20 +66,33 @@ nav a {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 .cta-primary:hover {
     background-color: #e0a800;
 }
 
-/* Feature Strip (Transparency Pillars) */
-.feature-strip {
-    padding: 50px 5%;
+/* General Content Sections */
+.content-section {
+    padding: 60px 5%;
+}
+.content-section h2 {
     text-align: center;
-}
-.feature-strip h2 {
+    font-size: 2em;
     color: #007BFF;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
+.content-section .subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Feature Cards (Used for Marketplace explanation) */
 .feature-cards {
     display: flex;
     justify-content: space-around;
@@ -91,20 +106,56 @@ nav a {
     padding: 25px;
     flex-basis: 30%;
     text-align: left;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
 }
 .card h3 {
     color: #28a745;
     margin-top: 0;
+    font-size: 1.3em;
 }
 
 /* Partner Callout */
 .partner-callout {
     background-color: #e9ecef;
-    padding: 40px 5%;
+    padding: 60px 5%;
     text-align: center;
 }
 .partner-callout h2 {
     color: #333;
+}
+.partner-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.benefit-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-basis: 40%;
+    text-align: left;
+}
+.benefit-card h3 {
+    color: #007BFF;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f4f7f6;
+    text-align: center;
+}
+.team-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Footer */
@@ -112,6 +163,15 @@ footer {
     background-color: #343a40;
     color: #adb5bd;
     text-align: center;
-    padding: 20px;
+    padding: 25px 5%;
     font-size: 0.9em;
+}
+.footer-links a {
+    color: #adb5bd;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: white;
 }
